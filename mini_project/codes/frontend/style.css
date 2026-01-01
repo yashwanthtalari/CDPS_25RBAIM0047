@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+#header {
+    padding: 15px;
+    background: #1b1f3b;
+    color: white;
+    text-align: center;
+}
+
+#header input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+#header button {
+    padding: 8px 15px;
+    margin-left: 5px;
+    background: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    height: calc(100vh - 120px);
+}
+
+#map {
+    flex: 2;
+    height: 100%;
+}
+
+#panel {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+}
+
+.risk-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.risk-badge.high {
+  background: #e53935;
+}
+
+.risk-badge.moderate {
+  background: #fb8c00;
+}
+
+.risk-badge.low {
+  background: #43a047;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: white;
+  margin-top: 8px;
+}
+
+.badge.high {
+  background: #dc2626; /* red */
+}
+
+.badge.moderate {
+  background: #f59e0b; /* amber */
+}
+
+.badge.low {
+  background: #16a34a; /* green */
+}
+
+.card.flood {
+  border-left: 6px solid #2563eb;
+}
+
+.card.heat {
+  border-left: 6px solid #ea580c;
+}
+
+.card.ai {
+  border-left: 6px solid #7c3aed;
+}
+
+.ai-text {
+  line-height: 3.6;
+  margin-top: 8px;
+}
+.results {
+  font-size: 18px;   /* adjust this */
+  line-height: 1.6;
+}
+
+#aiResult {
+  font-size: 20px;
+}

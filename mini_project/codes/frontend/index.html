@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CityTwin</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+    <div id="header">
+    <h1>🌆 CityTwin</h1>
+    <p>AI-powered urban resilience simulator</p>
+
+    <select id="modeSelect">
+        <option value="gps">Use My Location</option>
+        <option value="click">Select on Map</option>
+        <option value="city">Enter City Name</option>
+    </select>
+
+    <input id="cityInput" placeholder="Enter a city">
+    <button onclick="runMode()">Generate Analysis</button>
+</div>
+
+
+    <div id="main">
+
+        <div id="map"></div>
+
+        <div id="panel">
+    <h2>Results</h2>
+    <h3>AI Recommendations</h3>
+    <div id="aiResult"></div>
+    
+    <h3>Flood Risk</h3>
+    <div id="floodResult"></div>
+
+    <h3>Heat Risk</h3>
+    <div id="heatResult"></div>
+
+
+</div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
